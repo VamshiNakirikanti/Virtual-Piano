@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="piano.css">
+    <title>🎹 Music Time 🎵</title>
+    <script src="https://kit.fontawesome.com/6aa6fa11d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        { 
+          function tonesound(x){
+              var tone = new Audio();
+              tone.src = "tones/" + x + ".mp3";
+              tone.play();
+          } 
+          function changecolor(){
+              var r = Math.random()*256;
+              var g = Math.random()*256;
+              var b = Math.random()*256;
+            var color= "rgb("+r+"," + b +"," +g +")";
+            document.getElementById("main-piano").style.backgroundColor = color;
+            document.getElementById("main-piano2").style.backgroundColor = color;
+        }
+    }
+    </script>
+    <div align="center">
+        <h1>Virtual Piano</h1> 
+    </div>
+    <div class="piano-body" id="main-piano">
+         <div class="fbox" id="main-piano2">
+              <div onclick="tonesound('c3')"></div>
+              <div onclick="tonesound('d3')"></div>
+              <div onclick="tonesound('e3')"></div>
+              <div onclick="tonesound('f3')"></div>
+              <div onclick="tonesound('g3')"></div>
+              <div onclick="tonesound('a3')"></div>
+              <div onclick="tonesound('b3')"></div>
+              <div onclick="tonesound('c4')" ></div>
+              <div onclick="tonesound('d4')"></div>
+              <div onclick="tonesound('e4')"></div>
+              <div onclick="tonesound('f4')"></div>
+              <div onclick="tonesound('g4')"></div>
+              <div onclick="tonesound('a4')"></div>
+              <div onclick="tonesound('b4')"></div>
+         </div>
+         <div class="black-fbox-2">
+             <div onclick="tonesound('cb3')"></div>
+             <div onclick="tonesound('db3')"></div>
+             <div style="background-color: transparent;"></div>
+             <div onclick="tonesound('fb3')"></div>
+             <div onclick="tonesound('gb3')"></div>
+             <div onclick="tonesound('ab3')"></div>
+             <div style="background-color: transparent;"></div>
+             <div onclick="tonesound('cb4')"> </div>
+             <div onclick="tonesound('db4')"></div>
+             <div style="background-color: transparent;"></div>
+             <div onclick="tonesound('fb4')"></div>
+             <div onclick="tonesound('gb4')"></div>
+             <div onclick="tonesound('ab4')"></div>
+         </div>
+    </div>
+    <div align="center" class="colorbox">
+        <p><i class="fas fa-music"></i> Wonna Change Color Of The Piano?<i class="fas fa-music"></i></p>
+        <button onclick="changecolor()">Click Here</button>
+    </div>
+</body>
+</html>
