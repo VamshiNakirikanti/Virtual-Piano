@@ -1,41 +1,43 @@
 body{
-    background-image:url('image.png');
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0033 100%);
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-
 }
 h1{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 7vh;
+    font-size: 10vh;
     margin-top: 2vh;
     margin-bottom : 7vh;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
 }
 .piano-body{
     width: 60%;
     height: 50vh;
     margin: auto;
-    background-color: #2f29af;
+    background-color: #0a0e27;
     border-radius: 20px;
-    box-shadow: grey 0 0 4px 4px;
+    box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
 }
 .fbox{
     margin: auto;
     padding-top: 23vh;
     width:90%;
     height: 50%;
-    background-color:#2f29af;
+    background-color:#0a0e27;
     display: flex;
 }
 .fbox>div{
     height: 97%;
     width: 7%;
     margin: 2px;
-    background-color:white;
-    box-shadow: black 0 0 3px 3px;
+    background-color:#00ffff;
+    box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
 }
 .fbox>div:hover{
-    background-color: rgb(221, 217, 217);
+    background-color: #00ffff;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 20px #00ffff;
 }
 .black-fbox-2{
     position: relative;
@@ -51,10 +53,12 @@ h1{
     height: 2500%;
     width: 3%;
     margin:0 2.06%;
-    background-color: black;
+    background-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, inset 0 0 10px #ff00ff;
 }
 .black-fbox-2>div:hover{
-    background-color: rgb(66, 60, 60);
+    background-color: #ff00ff;
+    box-shadow: 0 0 20px #ff00ff, inset 0 0 20px #ff00ff;
 }
 .colorbox{
     font-size: 3.5vh;
@@ -62,14 +66,19 @@ h1{
     position: relative;
     padding-top: 5%;
     padding-left: 50%;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
 }
 button{
     padding: 0.8vh;
     font-size: 3vh;
-    color: white;
-    background-color: black;
+    color: #0a0e27;
+    background-color: #00ffff;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #00ffff;
 }
 button:hover{
-    background-color: white;
-    color: black;
+    background-color: #ff00ff;
+    color: #0a0e27;
+    box-shadow: 0 0 20px #ff00ff;
 }
